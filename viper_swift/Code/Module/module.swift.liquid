@@ -20,13 +20,13 @@ class {{ module_info.name }}Module {
         let interactor = {{ module_info.name }}Interactor()
         let viewController = {{ module_info.name }}ViewController()
 
-        presenter.view = viewController
-        presenter.router = router
-        presenter.interactor = interactor
-
         interactor.output = presenter
 
         viewController.output = presenter
+
+        presenter.view = viewController
+        presenter.router = router
+        presenter.interactor = interactor
 
         input = presenter
     }

@@ -9,7 +9,7 @@ import UIKit
 
 class {{ module_info.name }}Presenter {
     
-    weak var view: {{ module_info.name }}ViewInput!
+    var view: {{ module_info.name }}ViewInput!
     var interactor: {{ module_info.name }}InteractorInput!
     var router: {{ module_info.name }}RouterInput!
     
@@ -22,7 +22,7 @@ class {{ module_info.name }}Presenter {
 extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
     
     func viewIsReady() {
-    
+        view.setupInitialState()
     }
 
 }
