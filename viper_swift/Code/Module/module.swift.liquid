@@ -8,13 +8,8 @@ import UIKit
 
 
 class {{ module_info.name }}Module {
-
-    var input: {{ module_info.name }}ModuleInput!
     
-
-    // MARK: Life Cycle
-
-    init() {
+    class func create() -> {{ module_info.name }}ModuleInput {
         let router = {{ module_info.name }}Router()
         let presenter = {{ module_info.name }}Presenter()
         let interactor = {{ module_info.name }}Interactor()
@@ -27,8 +22,8 @@ class {{ module_info.name }}Module {
         presenter.view = viewController
         presenter.router = router
         presenter.interactor = interactor
-
-        input = presenter
+        
+        return presenter
     }
-
+    
 }
