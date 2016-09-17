@@ -2,7 +2,7 @@
 name: "viper_swift"
 summary: "Swift VIPER module template"
 author: "Ivanenko Dmitry"
-version: "0.1.0"
+version: "0.2.0"
 license: "MIT"
 
 # The declarations for code files
@@ -29,4 +29,5 @@ code_files:
 
 # Module
 - {name: Module/ModuleInput.swift, path: viper_swift/Code/Module/module_input.swift.liquid}
+- {name: Module/ModuleOutput.swift, path: viper_swift/Code/Module/module_output.swift.liquid}
 - {name: Module/Module.swift, path: viper_swift/Code/Module/module.swift.liquid}

@@ -6,27 +6,23 @@
 import UIKit
 
 
-
 class {{ module_info.name }}Presenter {
-    
-    var view: {{ module_info.name }}ViewInput!
-    var interactor: {{ module_info.name }}InteractorInput!
-    var router: {{ module_info.name }}RouterInput!
-    
+  weak var output: {{ module_info.name }}ModuleOutput?
+  var view: {{ module_info.name }}ViewInput!
+  var interactor: {{ module_info.name }}InteractorInput!
+  var router: {{ module_info.name }}RouterInput!
 }
-
 
 
 // MARK: - {{ module_info.name }}ViewOutput
 
 extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
     
-    func viewIsReady() {
-        view.setupInitialState()
-    }
+  func viewIsReady() {
+    view.setupInitialState()
+  }
 
 }
-
 
 
 // MARK: - {{ module_info.name }}InteractorOutput
@@ -34,7 +30,6 @@ extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
 extension {{ module_info.name }}Presenter: {{ module_info.name }}InteractorOutput {
     
 }
-
 
 
 // MARK: - {{ module_info.name }}ModuleInput

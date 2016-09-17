@@ -6,29 +6,27 @@
 import UIKit
 
 
-
 class {{ module_info.name }}ViewController: BaseViewController {
 
-    weak var output: {{ module_info.name }}ViewOutput!
+  weak var output: {{ module_info.name }}ViewOutput!
 
 
-    // MARK: Life cycle
+  // MARK: Life cycle
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        output.viewIsReady()
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    output.viewIsReady()
+  }
 
 }
-
 
 
 // MARK: - {{module_info.name}}ViewInput
 
 extension {{ module_info.name }}ViewController: {{module_info.name}}ViewInput {
     
-    func setupInitialState() {
+  func setupInitialState() {
 
-    }
+  }
 
 }
