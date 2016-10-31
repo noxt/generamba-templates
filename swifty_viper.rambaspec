@@ -13,6 +13,7 @@ code_files:
 - {name: View/ViewInput.swift,  path: swifty_viper/Code/View/view_input.swift.liquid}
 - {name: View/ViewOutput.swift, path: swifty_viper/Code/View/view_output.swift.liquid}
 - {name: View/ViewController.swift, path: swifty_viper/Code/View/viewcontroller.swift.liquid}
+- {name: View/ViewController.storyboard, path: swifty_viper/Code/View/viewcontroller.storyboard.liquid}
 
 # Presenter layer
 - {name: Presenter/Presenter.swift, path: swifty_viper/Code/Presenter/presenter.swift.liquid}

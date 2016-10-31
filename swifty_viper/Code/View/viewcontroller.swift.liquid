@@ -10,7 +10,8 @@ import UIKit
 
 
 class {{ module_info.name }}ViewController: UIViewController {
-
+  
+  var activityIndicatorContainerView = UIView()
   var output: {{ module_info.name }}ViewOutput!
 
 
@@ -18,6 +19,7 @@ class {{ module_info.name }}ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    setupActivityIndicatorContainer()
     output.viewIsReady()
   }
 
